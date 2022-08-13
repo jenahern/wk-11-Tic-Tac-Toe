@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Source Sans Pro">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-sm mx-6 my-3 text-center">
+    <div class="card m-5 gx-5 shadow bg-body rounded" id="card">
+        <div card class="card-header display-2 fw-bold" style="font-family: Montserrat"> Tic Tac Toe</div>
+        <br>
+        <h3 id="heading" style="font-family:Source Sans Pro">X begins game. Select your position to start.</h3>
+
+        <div class="row mx-5 gx-5 text-center">
+            <div class="col box" id="box1" onClick="clickSelector(this.id)">
+
+            </div>
+            <div class="col box" id="box2" onClick="clickSelector(this.id)">
+
+            </div>
+            <div class="col box" id="box3" onClick="clickSelector(this.id)">
+
+            </div>
+        </div>
+        <div class="row mx-5 gx-5 ">
+            <div class="col box" id="box4" onClick="clickSelector(this.id)">
+
+            </div>
+            <div class="col box" id="box5" onClick="clickSelector(this.id)">
+
+            </div>
+            <div class="col box" id="box6" onClick="clickSelector(this.id)">
+                <p></p>
+            </div>
+        </div>
+        <div class="row mx-5 mb-5 gx-5 ">
+            <div class="col box" id="box7" onClick="clickSelector(this.id)">
+
+            </div>
+            <div class="col box" id="box8" onClick="clickSelector(this.id)">
+
+            </div>
+            <div class="col box" id="box9" onClick="clickSelector(this.id)">
+            </div>
+
+        </div>
+        <div class="alert alert-danger fs-3 fw-bold" id="winAlert" role="alert" style="display:none">
+        </div>
+        <div button type="button" id="resetButtonId" class="btn btn-secondary fs-3 fw-bold" onclick="resetButton()">
+            Reset Game</button>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="tictactoe.js"></script>
+
+</body>
+
+</html>

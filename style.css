@@ -1,0 +1,20 @@
+body {
+    background-image: linear-gradient(rgb(46, 45, 45), rgb(0, 0, 0));
+    font-family: Montserrat;
+    font-family: Source Sans Pro;
+
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    font-size: 150px;
+    text-align: center;
+    line-height: 180px;
+}
+
+.card {
+    background-image: linear-gradient(lightpink, lightgray);
+}
+
